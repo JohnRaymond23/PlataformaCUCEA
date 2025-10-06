@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700|Roboto+Slab:400,700");
+
+.main-container,
+.encabezado-body {
+
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+.main-container > * {
+  font-size: calc(0.5vw + 1vh);
+}
+
+/*
+:root {
+  font-size: calc(0.5vw + 1vh);
+}
+*/
+
+/*
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*/
+
+body {
+  min-width: 420px;
+}
+
+h1,
+h4 {
+  font-family: "Arimo", sans-serif;
+  line-height: 1.3;
+}
+
+.encabezado-body header h1 {
+  font-size: 2.4rem;
+  margin: 4rem auto;
+}
+
+.encabezado-body span {
+  font-size: 3rem;
+}
+
+.main-container p,
+.encabezado-body p {
+  font-family: "Roboto Slab", serif;
+}
+
+/* a,
+a:link,
+a:active,
+a:visited {
+  color: #0066aa; 
+  text-decoration: none;
+  border-bottom: #000013 0.16rem solid;
+}
+
+a:hover {
+  color: #000013;
+  border-bottom: #0066aa 0.16rem solid;
+} */
+
+.main-container header,
+.main-container footer {
+  width: 40rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.main-container .add-task-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20rem;
+  height: 5.3rem;
+  margin: auto;
+  background: #a8a8a8;
+  border: #000013 0.2rem solid;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+}
+
+.main-container .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 1.6rem auto;
+}
+
+.main-container .column {
+  width: 13rem; /* Ajuste*/
+  margin: 0 0.6rem;
+  background: #a8a8a8;
+  border: #000013 0.2rem solid;
+  border-radius: 0.2rem;
+}
+
+.main-container .column-header {
+  padding: 0.1rem;
+  border-bottom: #000013 0.2rem solid;
+}
+
+.main-container .column-header h4 {
+  text-align: center;
+}
+
+.main-container .primero-column .column-header {
+  background: #ff872f;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .segundo-column .column-header {
+  background: #13a4d9;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .tercero-column .column-header {
+  background: #15d072;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .cuarto-column .column-header {
+  background: #EB56F5;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .quinto-column .column-header {
+  background: #FF4F4F;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .sexto-column .column-header {
+  background: #FFF683;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .septimo-column .column-header {
+  background: #F986C8;
+  width: 12.8rem; /* Ajuste */
+}
+
+.main-container .octavo-column .column-header {
+  background: #64FFE8;
+  width: 12.7rem; /* Ajuste */
+}
+
+.main-container .trash-column .column-header {
+  background: #ff4444;
+}
+
+.main-container .task-list {
+  min-height: 3rem; 
+}
+
+.main-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;  
+}
+
+.main-container li {
+  list-style-type: none;
+}
+
+.main-container .column-button {
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.main-container .button {
+  font-family: "Arimo", sans-serif;
+  font-weight: 700;
+  border: #000013 0.14rem solid;
+  border-radius: 0.2rem;
+  color: #000013;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.main-container .delete-button {
+  background-color: #ff4444;
+  margin: 0.1rem auto 0.6rem auto;
+}
+
+.main-container .delete-button:hover {
+  background-color: #fa7070;
+}
+
+.main-container .add-button {
+  background-color: #ffcb1e;
+  padding: 0 1rem;
+  height: 2.8rem;
+  width: 10rem;
+  margin-top: 0.6rem;
+}
+
+.main-container .add-button:hover {
+  background-color: #ffdd6e;
+}
+
+.main-container .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  list-style-type: none;
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0.4rem;
+  height: 7rem;
+  width: 12rem; /*Ajuste*/
+  border: #000013 0.15rem solid;
+  border-radius: 0.2rem;
+  cursor: move;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+.main-container #taskText {
+  background: #fff;
+  border: #000013 0.15rem solid;
+  border-radius: 0.2rem;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  height: 4rem;
+  width: 7rem; 
+  margin: auto 0.8rem auto 0.1rem;
+}
+
+.main-container .task p {
+  margin: auto;
+}
+
+/* Dragula CSS Release 3.2.0: https://github.com/bevacqua/dragula */
+
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+
+.gu-hide {
+  display: none !important;
+}
+
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+
+.position {
+  margin-right: 230px;
+  margin-top: 10px;
+}
+
+
+/* Inicio - Modal */
+
+[id^=modal] {
+  position: absolute;
+  top:329px; right:2rem;
+  width: 30rem;
+  height: 46rem;
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  padding:2rem;
+  text-align: center;
+  border-radius: .5rem;
+  border:var(--border);
+  background-color: var(--white);
+  display: none;
+  animation:fadeIn .2s linear;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+#modal1:target {
+  display: block;
+}
+
+#modal2:target {
+  display: block;
+}
+
+#modal3:target {
+  display: block;
+}
+
+#modal4:target {
+  display: block;
+}
+
+#modal5:target {
+  display: block;
+}
+
+#modal6:target {
+  display: block;
+}
+
+#modal7:target {
+  display: block;
+}
+
+#modal8:target {
+  display: block;
+}
+
+#modal9:target {
+  display: block;
+}
+
+#modal10:target {
+  display: block;
+}
+
+#modal11:target {
+  display: block;
+}
+
+#modal12:target {
+  display: block;
+}
+
+#modal13:target {
+  display: block;
+}
+
+#modal14:target {
+  display: block;
+}
+
+#modal15:target {
+  display: block;
+}
+
+#modal16:target {
+  display: block;
+}
+
+#modal17:target {
+  display: block;
+}
+
+#modal18:target {
+  display: block;
+}
+
+#modal19:target {
+  display: block;
+}
+
+#modal20:target {
+  display: block;
+}
+
+#modal21:target {
+  display: block;
+}
+
+#modal22:target {
+  display: block;
+}
+
+#modal23:target {
+  display: block;
+}
+
+#modal24:target {
+  display: block;
+}
+
+#modal25:target {
+  display: block;
+}
+
+#modal26:target {
+  display: block;
+}
+
+#modal27:target {
+  display: block;
+}
+
+#modal28:target {
+  display: block;
+}
+
+#modal29:target {
+  display: block;
+}
+
+#modal30:target {
+  display: block;
+}
+
+#modal31:target {
+  display: block;
+}
+
+#modal32:target {
+  display: block;
+}
+
+#modal33:target {
+  display: block;
+}
+
+#modal34:target {
+  display: block;
+}
+
+#modal35:target {
+  display: block;
+}
+
+#modal36:target {
+  display: block;
+}
+
+#modal37:target {
+  display: block;
+}
+
+#modal38:target {
+  display: block;
+}
+
+#modal39:target {
+  display: block;
+}
+
+#modal40:target {
+  display: block;
+}
+
+#modal41:target {
+  display: block;
+}
+
+#modal42:target {
+  display: block;
+}
+
+#modal43:target {
+  display: block;
+}
+
+#modal44:target {
+  display: block;
+}
+
+#modal45:target {
+  display: block;
+}
+
+#modal46:target {
+  display: block;
+}
+
+#modal47:target {
+  display: block;
+}
+
+#modal48:target {
+  display: block;
+}
+
+#modal49:target {
+  display: block;
+}
+
+#modal50:target {
+  display: block;
+}
+
+#modal51:target {
+  display: block;
+}
+
+#modal52:target {
+  display: block;
+}
+
+#modal53:target {
+  display: block;
+}
+
+[id^=modal] button {
+  position: absolute;
+  bottom: 0;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5%;
+  right: 100px;
+}
+
+[id^=modal] a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Fin - Modal */
+
+
+
+/* Inicio - Profile */
+
+.upload{
+  width: 125px;
+  position: relative;
+  margin: auto; 
+}
+
+.upload img{
+  border-radius: 50%;
+  border: 5px solid #DCDCDC;
+}
+
+.upload .round{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: purple;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.upload .round input[type = "file"]{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+  cursor: pointer;
+}
+
+/* Fin - Profile */
+
